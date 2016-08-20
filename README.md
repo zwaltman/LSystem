@@ -1,6 +1,16 @@
 # LSystem
 L-system generator written in Python. 
 
-Currently all that's finished is the class for L-system objects, including their defining characteristics (variables, rules, starting state, etc.) and methods for iterating them. Currently working on a command line application to interface with this and allow creating and generating L-systems, as well as saving and editing them. 
+Currently the application consists of two files: LSystem.py and LSystemApp.py. 
 
-[This is a personal project I'm working on because I 1) wanted to learn to make a simple command line application and 2) think L-systems are neat and wanted to do something with them.]
+LSystem.py contains the class defining L-system objects and giving the means for modifying them and generating their states.
+
+LSystemApp.py is the actual application that allows you to create, save, edit, and generate states of L-systems through the command line.
+
+# Current issues:
+
+1) The entire program works correctly if you know how to use it and always give correct input, but still needs better mechanisms for catching and responding to incorrect input.
+
+2) Adding documentation for everything. Methods, files, etc.
+
+3) Possibly splitting up LSystemApp.py into separate files??
