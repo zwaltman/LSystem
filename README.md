@@ -13,21 +13,34 @@ L-system generator written in Python.
 
 When the application opens, you will be in the main menu. 
 
-In the main menu you can enter the following commands: 
+<b>In the main menu you can enter the following commands:</b>
+
 'new': create a new system which will open in the editor 
+
 'edit <filename>': do the same with a saved system
+
 'systems': list saved system files in systemFiles
+
 'delete <filename>': delete system with name <filename>
+
 'open <filename>': open a saved system so that you can generate its states
+
 'state x y z': print system states with numbers x, y, and z. Can print as many as you want.
+
 'state x...z': print system states in range [x, z]
+
 'exit': exit application
 
-If you are in the editor creating a new system or editing an existing one, you can enter the following commands:
+<b>If you are in the editor creating a new system or editing an existing one, you can enter the following commands:</b>
+
 'view': view all current system settings
+
 'view <attribute>': view specific attribute settings. Ex: 'view variables' prints just the current variables
+
 'add <attribute>': Ex: 'add variable x', 'add rule a b'
+
 'save <filename>': Save current settings to file with name <filename>
+
 'exit': exit editor and return to main menu
 
 # Files overview:
