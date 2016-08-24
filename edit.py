@@ -1,6 +1,7 @@
 """
-Editor for L-systems objects,
-used for creation of new systems and modifying previously saved ones
+Editor for L-systems objects
+
+Used for creation of new systems and modifying previously saved ones
 """
 
 import LSystem
