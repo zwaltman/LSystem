@@ -1,5 +1,36 @@
 # LSystem
-L-system generator written in Python.
+*L-system generator written in Python.*
+
+[L-systems](https://en.wikipedia.org/wiki/L-system), a.k.a. Lindenmayer systems, are a type of abstract rewriting system whereby strings of symbols are rewritten according to given production rules to give states of a system. Their original motivation was in modeling biological systems, but they're applicable to modeling a range of systems including [finite truncations of fractals](https://en.wikipedia.org/wiki/L-system#Example_3:_Cantor_set).
+
+As an example, Lindenmayer's original L-system, intended to model the growth of algae, is given by
+
+  * *variables*: {A, B}
+  
+  * *constants*: {}
+  
+  * *axiom*: A
+  
+  * *rules*: {A --> AB, B --> A}
+  
+The 'axiom' is just the starting state of the system: the string we start with. 
+
+The rules are those for rewriting. At each generation we replace each instance of A in the string with the string AB, and each instance of B with A. This is done in parallel so that conflicts are avoided and everything is well-defined.
+
+Constants aren't used in this system, but they are used in others such as that for the [dragon curve](https://en.wikipedia.org/wiki/L-system#Example_6:_Dragon_curve) to indicate structural elements.
+
+Variables are just substrings that get rewritten.
+
+The first few generations of this system are
+
+* n = 0 : A
+* n = 1 : AB
+* n = 2 : ABA
+* n = 3 : ABAAB
+* n = 4 : ABAABABA
+* n = 5 : ABAABABAABAAB
+
+(Coincidentally, the growth of the length of this system is exactly the Fibonacci sequence, and the proportion of this length made up of the character A goes to [phi](https://en.wikipedia.org/wiki/Golden_ratio) as n goes to infinity.)
 
 ## Using the program:
 
