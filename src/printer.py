@@ -1,7 +1,9 @@
 """
 Printers for displaying L-System settings
 """
+
 import LSystemObject
+
 
 def printVars(system):
     """Print system variables"""
@@ -16,6 +18,7 @@ def printVars(system):
     else:
         print "    None"
 
+
 def printConsts(system):
     """Print system constants"""
     constants = system.getConsts()
@@ -29,6 +32,7 @@ def printConsts(system):
     else:
         print "    None"
 
+
 def printRules(system):
     """Print system rules"""
     rules = system.getRules()
@@ -39,6 +43,7 @@ def printRules(system):
             print ' '*4 + rule + ') ' + rule + '-->' + rules[rule]
     else:
         print "    None"
+
 
 def printStart(system):
     """Print system start state"""

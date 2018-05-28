@@ -10,6 +10,7 @@ from modify import addVar, deleteVar, addConst, deleteConst, addRule, deleteRule
 from load import loadSystem
 from save import save
 
+
 def edit(systemName=None):
     """
     Editor for L-systems

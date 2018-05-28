@@ -3,6 +3,7 @@ Load L-system settings from text file
 """
 from modify import addVar, addConst, addRule, addStart
 
+
 def loadSystem(system, systemName):
     """Load L-system settings from text file"""
     fileName = 'SystemFiles\\' + systemName + '.txt'
@@ -18,7 +19,7 @@ def loadSystem(system, systemName):
         addVar(system, var)
 
     for const in constants:
-        addConst(system, Const)
+        addConst(system, const)
 
     for rule in rules:
         rule = rule.split()

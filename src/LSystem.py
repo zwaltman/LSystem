@@ -7,6 +7,7 @@ from edit import edit
 from open import openSystem
 from directory import deleteSystem, listSystems
 
+
 head = ("\n    // LSystem Generator //\n\n" +
     "    'exit': exit program\n" +
     "    'new': create new L-system\n" +

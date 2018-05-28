@@ -5,6 +5,7 @@ Allows basic functions like creating L-system object and modifying its attribute
 as well as generating the state of the system at a specific iteration.
 """
 
+
 class LSystemObject:
     """Create, modify, generate states of L-System"""
     def __init__(self):
@@ -14,6 +15,7 @@ class LSystemObject:
         self.start = ""
 
     # SYSTEM VARIABLES
+    ###################################################################################
     def addVar(self, var):
         """Add variable if it doens't already exist"""
         if var not in self.variables:
@@ -29,7 +31,10 @@ class LSystemObject:
         else:
             del self.variables[index]
 
+    ###################################################################################
+
     # SYSTEM CONSTANTS
+    ###################################################################################
     def addConst(self, const):
         """Add constant if it doesn't already exist"""
         if const not in self.constants:
@@ -45,7 +50,10 @@ class LSystemObject:
         else:
             del self.constants[index]
 
+    ###################################################################################
+
     # SYSTEM RULES
+    ###################################################################################
     def addRule(self, a, b):
         """Add rule if it doesn't already exist"""
         self.rules[a] = b
@@ -60,7 +68,10 @@ class LSystemObject:
         else:
             del self.rules[char]
 
+    ###################################################################################
+
     # SYSTEM START STATE
+    ###################################################################################
     def addStart(self, start):
         """Add start state if it doesn't already exist"""
         self.start = start
@@ -72,7 +83,10 @@ class LSystemObject:
         """Deletes start state"""
         self.start = ""
 
+    ###################################################################################
+
     # GENERATING SYSTEM STATES
+    ###################################################################################
     def applyRule(self, char):
         """Applies rule for char on char, returns result"""
         return self.rules[char]
@@ -88,3 +102,5 @@ class LSystemObject:
             state = self.iterate(state)
 
         return state
+
+    ###################################################################################

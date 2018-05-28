@@ -1,10 +1,12 @@
 """
 Open previously saved L-system
 """
+
 import LSystemObject
 from message import invalidCommand
 from load import loadSystem
 from printer import printVars, printConsts, printRules, printStart
+
 
 def openSystem(systemName):
     """Open previously saved L-system"""
