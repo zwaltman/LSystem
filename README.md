@@ -1,17 +1,17 @@
 # LSystem
-*L-system generator written in Python.*
+**L-system generator written in Python.**
 
 [L-systems](https://en.wikipedia.org/wiki/L-system), a.k.a. Lindenmayer systems, are a type of abstract rewriting system whereby strings of symbols are rewritten according to given production rules to give states of a system. Their original motivation was in modeling biological systems, but they're applicable to modeling a range of systems including [finite truncations of fractals](https://en.wikipedia.org/wiki/L-system#Example_3:_Cantor_set).
 
 As an example, Lindenmayer's original L-system, intended to model the growth of algae, is given by
 
-  * *variables*: {A, B}
+  * **variables**: {A, B}
   
-  * *constants*: {}
+  * **constants**: {}
   
-  * *axiom*: A
+  * **axiom**: A
   
-  * *rules*: {A --> AB, B --> A}
+  * **rules**: {A --> AB, B --> A}
   
 The 'axiom' is just the starting state of the system: the string we start with. 
 
@@ -70,8 +70,8 @@ When the program is started (`python LSystem.py`), you will be in the main menu.
 
 `LSystemObject.py` contains the class for L-system type objects. These include the attributes defining the system (variables, constants, rules, start state) and the methods for modifying those attributes and for generating states of the system.
 
-All other files comprise the command line application through which the user can create, save, edit, and generate L-systems.
+All other files comprise the application through which the user can create, save, edit, and generate L-systems.
 
 ## Known issues:
 
-The entire program works correctly if you know how to use it and always give correct input, but needs much better mechanisms for catching and responding to incorrect input. This is the main set of features currently being worked out.
+The application works correctly if you know how to use it and give correct input (type `help` at any point for instructions), but needs better mechanisms for catching and responding to incorrect input. This is the main set of features currently being worked out.
